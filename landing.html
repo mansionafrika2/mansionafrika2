@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teachers Online Network - Landing Page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        .menu {
+            background-color: #004d00;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .menu ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        .menu ul li {
+            margin: 0 15px;
+        }
+        .menu ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px 15px;
+            transition: background-color 0.3s, border-radius 0.3s;
+            border-radius: 5px;
+        }
+        .menu ul li a:hover {
+            background-color: #005a0009;
+        }
+        .header-ad {
+            text-align: center;
+            margin-top: 60px; /* Adjust for fixed menu */
+        }
+        .hero {
+            background-image: url('ton.png');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 150px 0;
+            text-align: center;
+            position: relative;
+        }
+        .hero::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 77, 0, 0.7);
+            z-index: 1;
+        }
+        .hero .content {
+            position: relative;
+            z-index: 2;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+        }
+        .hero .btn {
+            padding: 15px 30px;
+            font-size: 1.25rem;
+            background-color: #818f81;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .hero .btn:hover {
+            background-color: #003b00;
+        }
+        .section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+        .section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        .section p {
+            font-size: 1.25rem;
+            margin-bottom: 30px;
+        }
+        .features, .how-it-works, .testimonials {
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            margin-bottom: 40px;
+        }
+        .features .feature-item, .how-it-works .step-item, .testimonials .testimonial-item {
+            margin-bottom: 30px;
+        }
+        .footer {
+            background-color: #004d00;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .sidebar-ad {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <ul>
+            <li><a href="profile.html">My Profile</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+        </ul>
+    </div>
+
+    <!-- Header Banner Ad (728x90) -->
+    <div class="header-ad">
+        <img src="path_to_your_header_ad_banner_728x90.jpg" alt="Header Ad Banner" style="width: 100%; max-width: 728px; height: auto;">
+    </div>
+
+    <div class="hero">
+        <div class="content">
+            <h1>Welcome to Teachers Online Network</h1>
+            <p>Find your ideal teaching swap partner easily and securely.</p>
+            <button class="btn" onclick="window.location.href='profile.html'">Get Started</button>
+        </div>
+    </div>
+    
+    <div class="section features">
+        <h2>Features</h2>
+        <p>Our platform offers a variety of features to help you find the perfect teaching swap partner.</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 feature-item">
+                    <h3>Easy Matching</h3>
+                    <p>Our algorithm matches you with compatible teachers quickly and efficiently.</p>
+                </div>
+                <div class="col-md-4 feature-item">
+                    <h3>Secure Communication</h3>
+                    <p>Communicate securely with potential swap partners through our built-in chat interface.</p>
+                </div>
+                <div class="col-md-4 feature-item">
+                    <h3>Comprehensive Profiles</h3>
+                    <p>Complete your profile to receive the best match recommendations.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section how-it-works">
+        <h2>How It Works</h2>
+        <p>Follow these simple steps to find your ideal teaching swap partner.</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 step-item">
+                    <h3>Step 1: Sign Up</h3>
+                    <p>Create an account and complete your profile with your teaching preferences.</p>
+                </div>
+                <div class="col-md-4 step-item">
+                    <h3>Step 2: Search</h3>
+                    <p>Use our search tool to find potential swap partners based on your criteria.</p>
+                </div>
+                <div class="col-md-4 step-item">
+                    <h3>Step 3: Connect</h3>
+                    <p>Start a conversation with potential partners and arrange your swap.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section testimonials">
+        <h2>Testimonials</h2>
+        <p>Hear from teachers who have successfully found their swap partners on our platform.</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 testimonial-item">
+                    <p>"Teachers Online Network made it so easy to find a swap partner. The process was smooth and efficient!"</p>
+                    <p><strong>- Grace Atieno</strong></p>
+                </div>
+                <div class="col-md-4 testimonial-item">
+                    <p>"I was able to find a teaching swap in no time. The platform is user-friendly and secure."</p>
+                    <p><strong>- James Sulumeti</strong></p>
+                </div>
+                <div class="col-md-4 testimonial-item">
+                    <p>"Highly recommend Teachers Online Network for any teacher looking to swap locations."</p>
+                    <p><strong>- Michael Kimani</strong></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sidebar Vertical Ad (160x600) -->
+    <div class="sidebar-ad">
+        <img src="path_to_your_vertical_ad_160x600.jpg" alt="Sidebar Ad" style="width: 100%; max-width: 160px; height: auto;">
+    </div>
+
+    <!-- Footer Banner Ad (728x90) -->
+    <div class="footer">
+        <p>&copy; 2024 Teachers Online Network. All rights reserved.</p>
+        <div>
+            <img src="path_to_your_footer_ad_banner_728x90.jpg" alt="Footer Ad Banner" style="width: 100%; max-width: 728px; height: auto;">
+        </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>

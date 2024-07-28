@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - Sign Up / Sign In</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .menu {
+            background-color: #004d00; /* Jungle Green */
+            padding: 10px 0;
+        }
+        .menu ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        .menu ul li {
+            margin: 0 15px;
+        }
+        .menu ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px 15px;
+            transition: background-color 0.3s, border-radius 0.3s;
+            border-radius: 5px;
+            outline: none; /* Remove default focus outline */
+        }
+        .menu ul li a:hover, .menu ul li a:focus {
+            background-color: #003300; /* Darker green on hover/focus */
+            outline: 2px solid #fff; /* Custom focus outline */
+        }
+        .form-container {
+            max-width: 500px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .form-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .feedback {
+            color: red;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 10px;
+        }
+        .feedback.visible {
+            display: block;
+        }
+        .feedback.hidden {
+            display: none;
+        }
+        .sidebar img {
+            max-width: 100%;
+            height: auto;
+        }
+        footer img {
+            max-width: 100%;
+            height: auto;
+        }
+        .form-group .form-control {
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .btn-primary {
+            background-color: #004d00; /* Jungle Green */
+            border-color: #004d00;
+        }
+        .btn-primary:hover, .btn-primary:focus {
+            background-color: #003300; /* Darker green on hover/focus */
+            border-color: #003300;
+        }
+    </style>
+</head>
+<body>
+    <header role="banner">
+        <div class="menu" role="navigation" aria-label="Main Navigation">
+            <ul>
+                <li><a href="index.html" tabindex="1">Home</a></li>
+                <li><a href="privacy.html" tabindex="2">Privacy Policy</a></li>
+                <li><a href="terms.html" tabindex="3">Terms of Service</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Banner Ad (728x90) -->
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col-12 text-center">
+                <img src="banner-ad-728x90.jpg" alt="Banner Ad" class="img-fluid">
+            </div>
+        </div>
+    </div>
+
+    <main role="main" aria-label="Profile and Sign Up/Sign In Forms">
+        <div class="container">
+            <div class="row">
+                <aside class="col-md-3" role="complementary">
+                    <h3>Profile Details</h3>
+                    <!-- Sidebar Ad (160x600) -->
+                    <img src="sidebar-ad-160x600.jpg" alt="Sidebar Ad" class="img-fluid mb-3">
+
+                    <!-- Profile details go here -->
+                    <ul>
+                        <li>Name: John Doe</li>
+                        <li>Email: john.doe@example.com</li>
+                        <li>Phone: +123456789</li>
+                        <!-- Other profile details -->
+                    </ul>
+                    
+                    <!-- Medium Rectangle Ad (300x250) -->
+                    <div class="text-center mt-3">
+                        <img src="medium-rectangle-ad-300x250.jpg" alt="Medium Rectangle Ad" class="img-fluid">
+                    </div>
+                </aside>
+
+                <div class="col-md-9">
+                    <div class="form-container" aria-live="polite">
+                        <h2>Sign Up</h2>
+                        <form id="signUpForm" aria-labelledby="signUpFormLabel">
+                            <div class="form-group">
+                                <label for="signUpName">Name:</label>
+                                <input type="text" id="signUpName" name="name" class="form-control" required aria-describedby="signUpNameError">
+                                <div id="signUpNameError" class="feedback hidden" aria-live="assertive"></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="signUpEmail">Email:</label>
+                                <input type="email" id="signUpEmail" name="email" class="form-control" required aria-describedby="signUpEmailError">
+                                <div id="signUpEmailError" class="feedback hidden" aria-live="assertive"></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="signUpPassword">Password:</label>
+                                <input type="password" id="signUpPassword" name="password" class="form-control" required aria-describedby="signUpPasswordError">
+                                <div id="signUpPasswordError" class="feedback hidden" aria-live="assertive"></div>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Sign Up</button>
+                            <div id="signUpFeedback" class="feedback hidden" aria-live="assertive"></div>
+                        </form>
+                    </div>
+
+                    <div class="form-container" aria-live="polite">
+                        <h2>Sign In</h2>
+                        <form id="signInForm" aria-labelledby="signInFormLabel">
+                            <div class="form-group">
+                                <label for="signInEmail">Email:</label>
+                                <input type="email" id="signInEmail" name="email" class="form-control" required aria-describedby="signInEmailError">
+                                <div id="signInEmailError" class="feedback hidden" aria-live="assertive"></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="signInPassword">Password:</label>
+                                <input type="password" id="signInPassword" name="password" class="form-control" required aria-describedby="signInPasswordError">
+                                <div id="signInPasswordError" class="feedback hidden" aria-live="assertive"></div>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Sign In</button>
+                            <div id="signInFeedback" class="feedback hidden" aria-live="assertive"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer Ad (728x90) -->
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col-12 text-center">
+                <img src="footer-ad-728x90.jpg" alt="Footer Ad" class="img-fluid">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('signUpForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            // Clear previous errors
+            document.querySelectorAll('#signUpForm .feedback').forEach(el => el.classList.add('hidden'));
+
+            const name = document.getElementById('signUpName').value.trim();
+            const email = document.getElementById('signUpEmail').value.trim();
+            const password = document.getElementById('signUpPassword').value.trim();
+            let valid = true;
+
+            if (!name) {
+                document.getElementById('signUpNameError').textContent = 'Name is required.';
+                document.getElementById('signUpNameError').classList.remove('hidden');
+                valid = false;
+            }
+
+            if (!email || !validateEmail(email)) {
+                document.getElementById('signUpEmailError').textContent = 'Please enter a valid email address.';
+                document.getElementById('signUpEmailError').classList.remove('hidden');
+                valid = false;
+            }
+
+            if (password.length < 8 || !/\d/.test(password) || !/[!@#$%^&*]/.test(password)) {
+                document.getElementById('signUpPasswordError').textContent = 'Password must be at least 8 characters long and contain at least one number and one special character.';
+                document.getElementById('signUpPasswordError').classList.remove('hidden');
+                valid = false;
+            }
+
+            if (valid) {
+                document.getElementById('signUpFeedback').textContent = 'Sign Up Successful!';
+                document.getElementById('signUpFeedback').classList.remove('hidden');
+            } else {
+                document.getElementById('signUpFeedback').textContent = 'Please fix the errors above.';
+                document.getElementById('signUpFeedback').classList.remove('hidden');
+            }
+        });
+
+        document.getElementById('signInForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            // Clear previous errors
+            document.querySelectorAll('#signInForm .feedback').forEach(el => el.classList.add('hidden'));
+
+            const email = document.getElementById('signInEmail').value.trim();
+            const password = document.getElementById('signInPassword').value.trim();
+            let valid = true;
+
+            if (!email || !validateEmail(email)) {
+                document.getElementById('signInEmailError').textContent = 'Please enter a valid email address.';
+                document.getElementById('signInEmailError').classList.remove('hidden');
+                valid = false;
+            }
+
+            if (!password) {
+                document.getElementById('signInPasswordError').textContent = 'Password is required.';
+                document.getElementById('signInPasswordError').classList.remove('hidden');
+                valid = false;
+            }
+
+            if (valid) {
+                document.getElementById('signInFeedback').textContent = 'Sign In Successful!';
+                document.getElementById('signInFeedback').classList.remove('hidden');
+            } else {
+                document.getElementById('signInFeedback').textContent = 'Please fix the errors above.';
+                document.getElementById('signInFeedback').classList.remove('hidden');
+            }
+        });
+
+        function validateEmail(email) {
+            const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return re.test(email);
+        }
+    </script>
+</body>
+</html>

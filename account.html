@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teachers Online Network - Account</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .menu {
+            background-color: #004d00; /* Green */
+            padding: 10px;
+        }
+        .menu ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+        }
+        .menu ul li {
+            display: inline;
+        }
+        .menu ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px 15px;
+            outline: none; /* Remove default focus outline */
+        }
+        .menu ul li a:focus {
+            outline: 2px solid #fff; /* Custom focus outline */
+        }
+        .content {
+            display: flex;
+            margin: 20px;
+        }
+        .chat {
+            width: 25%;
+            background-color: #f0f0f0;
+            padding: 20px;
+            border-right: 1px solid #ccc;
+        }
+        .profile {
+            width: 50%;
+            background-color: #e6e6e6;
+            padding: 20px;
+        }
+        .blog {
+            background-color: #d9d9d9;
+            padding: 20px;
+            margin-top: 20px;
+            position: relative;
+        }
+        .ad-banner, .ad-vertical, .ad-horizontal, .footer-ad {
+            background-color: #ccc; /* Placeholder color */
+            text-align: center;
+            margin: 20px 0;
+        }
+        .ad-banner {
+            width: 100%;
+            height: 90px; /* Adjust height as needed */
+        }
+        .ad-vertical {
+            width: 100%;
+            height: 600px; /* Adjust height as needed */
+        }
+        .ad-horizontal {
+            width: 100%;
+            height: 100px; /* Adjust height as needed */
+        }
+        .footer-ad {
+            width: 100%;
+            height: 60px; /* Adjust height as needed */
+        }
+    </style>
+</head>
+<body>
+    <header role="banner">
+        <div class="menu" role="navigation" aria-label="Main Navigation">
+            <ul>
+                <li><a href="index.html" tabindex="1">Home</a></li>
+                <li><a href="myswap.html" tabindex="2">My Swaps</a></li>
+                <li><a href="profile.html" tabindex="3">My Profile</a></li>
+                <li><a href="chat.html" tabindex="4">Chat</a></li>
+                <li><a href="blog.html" tabindex="5">Blog</a></li>
+                <li><a href="#" id="logout" tabindex="6" aria-label="Log Out">Log Out</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Header Ad Banner -->
+    <div class="ad-banner" role="banner" aria-label="Header Advertisement">
+        <p>Banner Ad - Header Area</p>
+    </div>
+
+    <main class="content" role="main">
+        <aside class="chat" role="complementary" aria-label="Chat Interface">
+            <div class="ad-vertical" role="complementary" aria-label="Vertical Advertisement in Chat Sidebar">
+                <p>Vertical Ad - Chat Sidebar</p>
+            </div>
+            <h3>Chat Interface</h3>
+            <p>This is where users can chat with their swap matches and other users.</p>
+            <!-- Add your chat interface here -->
+        </aside>
+        <section class="profile" aria-labelledby="profile-section">
+            <h3 id="profile-section">Profile Details</h3>
+            <div class="ad-vertical" role="complementary" aria-label="Vertical Advertisement in Profile Sidebar">
+                <p>Vertical Ad - Profile Sidebar</p>
+            </div>
+            <p><strong>Name:</strong> John Doe</p>
+            <p><strong>Email:</strong> john@example.com</p>
+            <p><strong>Phone:</strong> (555) 555-5555</p>
+            <p><strong>Sex:</strong> Male</p>
+            <p><strong>Age:</strong> 30</p>
+            <p><strong>County of Origin:</strong> Nairobi</p>
+            <p><strong>Preferred Counties:</strong> Kiambu, Mombasa, Kisumu, Nakuru, Eldoret</p>
+        </section>
+    </main>
+
+    <!-- Blog Section with Horizontal Ad -->
+    <section class="blog" aria-labelledby="blog-section">
+        <h3 id="blog-section">Blog Section</h3>
+        <p>Check out our latest blog posts!</p>
+        <a href="blog.html" tabindex="7">Visit Blog</a>
+        <!-- Bottom Section Horizontal Ad -->
+        <div class="ad-horizontal" role="complementary" aria-label="Horizontal Advertisement at Bottom of Blog Section">
+            <p>Horizontal Ad - Bottom of Blog Section</p>
+        </div>
+    </section>
+
+    <!-- Footer Ad -->
+    <footer role="contentinfo">
+        <div class="footer-ad" aria-label="Footer Advertisement">
+            <p>Footer Ad</p>
+        </div>
+    </footer>
+
+</body>
+</html>

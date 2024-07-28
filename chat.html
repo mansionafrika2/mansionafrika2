@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teachers Online Network - Chat</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .menu a:focus {
+            outline: 3px solid #005a00; /* High contrast focus indicator */
+        }
+        .chat-container {
+            display: flex;
+            flex-direction: column;
+            height: 80vh;
+        }
+        .chat-box {
+            flex: 1;
+            overflow-y: auto;
+            border: 1px solid #ddd;
+            padding: 10px;
+            background: #f9f9f9;
+        }
+        .chat-form {
+            border-top: 1px solid #ddd;
+            padding: 10px;
+            background: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <ul>
+            <li><a href="index.html" tabindex="1">Home</a></li>
+            <li><a href="myswap.html" tabindex="2">My Swaps</a></li>
+            <li><a href="profile.html" tabindex="3">My Profile</a></li>
+            <li><a href="chat.html" tabindex="4">Chat</a></li>
+            <li><a href="blog.html" tabindex="5">Blog</a></li>
+            <li><a href="account.html" tabindex="6">My Space</a></li>
+            <li><a href="#" id="logout" tabindex="7">Log Out</a></li>
+        </ul>
+    </div>
+
+    <!-- Banner Ad (728x90) -->
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col-12 text-center">
+                <img src="banner-ad-728x90.jpg" alt="Banner Ad" class="img-fluid">
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-4">
+        <div class="row">
+            <!-- Sidebar Ad (160x600) -->
+            <div class="col-md-2">
+                <img src="sidebar-ad-160x600.jpg" alt="Sidebar Ad" class="img-fluid">
+            </div>
+
+            <div class="col-md-8 chat-container">
+                <div class="chat-box" aria-live="polite" role="log">
+                    <!-- Chat messages will be dynamically loaded here -->
+                    <div class="chat-message chat-message-sender" tabindex="8">
+                        <p>Hello! How can I assist you today?</p>
+                    </div>
+                    <div class="chat-message chat-message-receiver" tabindex="9">
+                        <p>I need help with finding a teaching swap.</p>
+                    </div>
+                    <!-- More chat messages -->
+                </div>
+                <div class="chat-form">
+                    <form id="chatForm" aria-labelledby="chatFormTitle">
+                        <h2 id="chatFormTitle">Send a Message</h2>
+                        <div class="form-group">
+                            <label for="messageInput">Message:</label>
+                            <textarea class="form-control" id="messageInput" rows="3" required tabindex="10"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" tabindex="11">Send</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Sidebar Ad (160x600) -->
+            <div class="col-md-2">
+                <img src="sidebar-ad-160x600.jpg" alt="Sidebar Ad" class="img-fluid">
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Ad (728x90) -->
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col-12 text-center">
+                <img src="footer-ad-728x90.jpg" alt="Footer Ad" class="img-fluid">
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

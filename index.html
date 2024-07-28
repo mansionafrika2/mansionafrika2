@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teachers Online Network - Home</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .menu a:focus {
+            outline: 3px solid #005a00; /* High contrast focus indicator */
+        }
+        .header {
+            margin-bottom: 20px;
+        }
+        .banner-ad, .footer-ad {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .sidebar-ad {
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <nav class="menu" role="navigation" aria-label="Main Menu">
+        <ul class="nav">
+            <li class="nav-item"><a href="index.html" class="nav-link" tabindex="1">Home</a></li>
+            <li class="nav-item"><a href="myswap.html" class="nav-link" tabindex="2">My Swaps</a></li>
+            <li class="nav-item"><a href="profile.html" class="nav-link" tabindex="3">My Profile</a></li>
+            <li class="nav-item"><a href="chat.html" class="nav-link" tabindex="4">Chat</a></li>
+            <li class="nav-item"><a href="blog.html" class="nav-link" tabindex="5">Blog</a></li>
+            <li class="nav-item"><a href="account.html" class="nav-link" tabindex="6">My Space</a></li>
+            <li class="nav-item"><a href="#" id="logout" class="nav-link" tabindex="7">Log Out</a></li>
+        </ul>
+    </nav>
+    
+    <!-- Banner Ad (728x90) -->
+    <div class="container banner-ad">
+        <div class="row">
+            <div class="col-12 text-center">
+                <img src="banner-ad-728x90.jpg" alt="Banner Ad" class="img-fluid">
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-4">
+        <div class="row">
+            <!-- Sidebar Ad (160x600) -->
+            <div class="col-md-2 sidebar-ad">
+                <img src="sidebar-ad-160x600.jpg" alt="Sidebar Ad" class="img-fluid">
+            </div>
+
+            <main class="col-md-8" role="main">
+                <div class="header text-center">
+                    <h1>Welcome to TEACHERS ONLINE NETWORK</h1>
+                    <p>Find your ideal teaching swap partner easily and securely.</p>
+                </div>
+                <form id="swapForm" aria-labelledby="swapFormTitle">
+                    <h2 id="swapFormTitle" class="sr-only">Swap Search Form</h2>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="firstName">First Name:</label>
+                            <input type="text" class="form-control" id="firstName" name="firstName" required aria-required="true">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="lastName">Last Name:</label>
+                            <input type="text" class="form-control" id="lastName" name="lastName" required aria-required="true">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="currentCounty">Current County:</label>
+                            <select class="form-control" id="currentCounty" name="currentCounty" required aria-required="true">
+                                <option value="">Select Current County</option>
+                                <option value="Mombasa">Mombasa</option>
+                                <option value="Kwale">Kwale</option>
+                                <option value="Kilifi">Kilifi</option>
+                                <option value="Tana River">Tana River</option>
+                                <option value="Lamu">Lamu</option>
+                                <option value="Taita/Taveta">Taita/Taveta</option>
+                                <option value="Garissa">Garissa</option>
+                                <option value="Wajir">Wajir</option>
+                                <option value="Mandera">Mandera</option>
+                                <option value="Marsabit">Marsabit</option>
+                                <option value="Isiolo">Isiolo</option>
+                                <option value="Meru">Meru</option>
+                                <option value="Tharaka-Nithi">Tharaka-Nithi</option>
+                                <option value="Embu">Embu</option>
+                                <option value="Kitui">Kitui</option>
+                                <option value="Machakos">Machakos</option>
+                                <option value="Makueni">Makueni</option>
+                                <option value="Nyandarua">Nyandarua</option>
+                                <option value="Nyeri">Nyeri</option>
+                                <option value="Kirinyaga">Kirinyaga</option>
+                                <option value="Murang'a">Murang'a</option>
+                                <option value="Kiambu">Kiambu</option>
+                                <option value="Turkana">Turkana</option>
+                                <option value="West Pokot">West Pokot</option>
+                                <option value="Samburu">Samburu</option>
+                                <option value="Trans Nzoia">Trans Nzoia</option>
+                                <option value="Uasin Gishu">Uasin Gishu</option>
+                                <option value="Elgeyo/Marakwet">Elgeyo/Marakwet</option>
+                                <option value="Nandi">Nandi</option>
+                                <option value="Baringo">Baringo</option>
+                                <option value="Laikipia">Laikipia</option>
+                                <option value="Nakuru">Nakuru</option>
+                                <option value="Narok">Narok</option>
+                                <option value="Kajiado">Kajiado</option>
+                                <option value="Kericho">Kericho</option>
+                                <option value="Bomet">Bomet</option>
+                                <option value="Kakamega">Kakamega</option>
+                                <option value="Vihiga">Vihiga</option>
+                                <option value="Bungoma">Bungoma</option>
+                                <option value="Busia">Busia</option>
+                                <option value="Siaya">Siaya</option>
+                                <option value="Kisumu">Kisumu</option>
+                                <option value="Homa Bay">Homa Bay</option>
+                                <option value="Migori">Migori</option>
+                                <option value="Kisii">Kisii</option>
+                                <option value="Nyamira">Nyamira</option>
+                                <option value="Nairobi City">Nairobi City</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="desiredCounty">Desired County:</label>
+                            <select class="form-control" id="desiredCounty" name="desiredCounty" required aria-required="true">
+                                <option value="">Select Desired County</option>
+                                <option value="Mombasa">Mombasa</option>
+                                <option value="Kwale">Kwale</option>
+                                <option value="Kilifi">Kilifi</option>
+                                <option value="Tana River">Tana River</option>
+                                <option value="Lamu">Lamu</option>
+                                <option value="Taita/Taveta">Taita/Taveta</option>
+                                <option value="Garissa">Garissa</option>
+                                <option value="Wajir">Wajir</option>
+                                <option value="Mandera">Mandera</option>
+                                <option value="Marsabit">Marsabit</option>
+                                <option value="Isiolo">Isiolo</option>
+                                <option value="Meru">Meru</option>
+                                <option value="Tharaka-Nithi">Tharaka-Nithi</option>
+                                <option value="Embu">Embu</option>
+                                <option value="Kitui">Kitui</option>
+                                <option value="Machakos">Machakos</option>
+                                <option value="Makueni">Makueni</option>
+                                <option value="Nyandarua">Nyandarua</option>
+                                <option value="Nyeri">Nyeri</option>
+                                <option value="Kirinyaga">Kirinyaga</option>
+                                <option value="Murang'a">Murang'a</option>
+                                <option value="Kiambu">Kiambu</option>
+                                <option value="Turkana">Turkana</option>
+                                <option value="West Pokot">West Pokot</option>
+                                <option value="Samburu">Samburu</option>
+                                <option value="Trans Nzoia">Trans Nzoia</option>
+                                <option value="Uasin Gishu">Uasin Gishu</option>
+                                <option value="Elgeyo/Marakwet">Elgeyo/Marakwet</option>
+                                <option value="Nandi">Nandi</option>
+                                <option value="Baringo">Baringo</option>
+                                <option value="Laikipia">Laikipia</option>
+                                <option value="Nakuru">Nakuru</option>
+                                <option value="Narok">Narok</option>
+                                <option value="Kajiado">Kajiado</option>
+                                <option value="Kericho">Kericho</option>
+                                <option value="Bomet">Bomet</option>
+                                <option value="Kakamega">Kakamega</option>
+                                <option value="Vihiga">Vihiga</option>
+                                <option value="Bungoma">Bungoma</option>
+                                <option value="Busia">Busia</option>
+                                <option value="Siaya">Siaya</option>
+                                <option value="Kisumu">Kisumu</option>
+                                <option value="Homa Bay">Homa Bay</option>
+                                <option value="Migori">Migori</option>
+                                <option value="Kisii">Kisii</option>
+                                <option value="Nyamira">Nyamira</option>
+                                <option value="Nairobi City">Nairobi City</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary" tabindex="8">Search for Swap</button>
+                    </div>
+                </form>
+            </main>
+
+            <!-- Sidebar Ad (160x600) -->
+            <div class="col-md-2 sidebar-ad">
+                <img src="sidebar-ad-160x600.jpg" alt="Sidebar Ad" class="img-fluid">
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Ad (728x90) -->
+    <div class="container footer-ad">
+        <div class="row">
+            <div class="col-12 text-center">
+                <img src="footer-ad-728x90.jpg" alt="Footer Ad" class="img-fluid">
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teachers Online Network - Blog</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Add your styles here */
+        .menu {
+            background-color: #004d00; /* Jungle Green */
+            padding: 10px 0;
+        }
+        .menu ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        .menu ul li {
+            margin: 0 15px;
+        }
+        .menu ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px 15px;
+            transition: background-color 0.3s, border-radius 0.3s;
+            border-radius: 5px;
+            outline: none; /* Remove default focus outline */
+        }
+        .menu ul li a:focus {
+            outline: 2px solid #fff; /* Custom focus outline */
+        }
+        .menu ul li a:hover {
+            background-color: #005a00; /* Slightly darker green for hover effect */
+        }
+        .container {
+            padding: 20px;
+        }
+        .blog-content {
+            margin-top: 20px;
+        }
+        .sidebar {
+            margin-top: 20px;
+        }
+        footer {
+            background-color: #004d00;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header role="banner">
+        <div class="menu" role="navigation" aria-label="Main Navigation">
+            <ul>
+                <li><a href="index.html" tabindex="1">Home</a></li>
+                <li><a href="myswap.html" tabindex="2">My Swap</a></li>
+                <li><a href="profile.html" tabindex="3">My Profile</a></li>
+                <li><a href="chat.html" tabindex="4">Chat</a></li>
+                <li><a href="account.html" tabindex="5">My Space</a></li>
+                <li><a href="blog.html" tabindex="6">Blog</a></li>
+                <li><a href="#" id="logout" tabindex="7" aria-label="Log Out">Log Out</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main role="main">
+        <section class="container" aria-labelledby="blog-main-section">
+            <article>
+                <h1 id="blog-main-section">Blog</h1>
+                <p>Check out our latest blog posts on finance:</p>
+                <!-- Placeholder for a banner ad -->
+                <aside class="ad-banner" role="complementary" aria-label="Banner Advertisement">
+                    <p>Banner Ad: [Ad Content]</p>
+                </aside>
+                <div class="blog-content">
+                    <article aria-labelledby="blog-post-1">
+                        <h2 id="blog-post-1">Blog Post Title 1</h2>
+                        <p>Content of the blog post...</p>
+                        <!-- Placeholder for medium rectangle ad within content -->
+                        <aside class="ad-medium-rectangle" role="complementary" aria-label="Medium Rectangle Advertisement">
+                            <p>Medium Rectangle Ad: [Ad Content]</p>
+                        </aside>
+                    </article>
+                    <article aria-labelledby="blog-post-2">
+                        <h2 id="blog-post-2">Blog Post Title 2</h2>
+                        <p>Content of the blog post...</p>
+                        <!-- Placeholder for medium rectangle ad within content -->
+                        <aside class="ad-medium-rectangle" role="complementary" aria-label="Medium Rectangle Advertisement">
+                            <p>Medium Rectangle Ad: [Ad Content]</p>
+                        </aside>
+                    </article>
+                </div>
+            </article>
+
+            <aside class="sidebar" role="complementary" aria-labelledby="related-articles">
+                <h2 id="related-articles">Related Articles</h2>
+                <p>Links to related articles or additional content.</p>
+                <!-- Placeholder for vertical ad in sidebar -->
+                <aside class="ad-vertical" role="complementary" aria-label="Vertical Advertisement in Sidebar">
+                    <p>Vertical Ad: [Ad Content]</p>
+                </aside>
+            </aside>
+        </section>
+    </main>
+
+    <footer role="contentinfo">
+        <p>&copy; 2024 Teachers Online Network. All rights reserved.</p>
+        <p><a href="privacy.html" tabindex="8" aria-label="Privacy Policy">Privacy Policy</a> | 
+           <a href="terms.html" tabindex="9" aria-label="Terms of Service">Terms of Service</a></p>
+        <!-- Placeholder for small banner ad in footer -->
+        <aside class="ad-footer" role="complementary" aria-label="Footer Advertisement">
+            <p>Footer Ad: [Ad Content]</p>
+        </aside>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
